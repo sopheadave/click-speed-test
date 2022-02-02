@@ -1,0 +1,198 @@
+.cpstest-main {
+  background: none;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  font: bold 17px/30px Arial, Helvetica, sans-serif;
+  min-width: 260px;
+  margin: auto;
+  border: none;
+}
+.cpstest-main:after {
+  content: "";
+  clear: both;
+}
+.noselect {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cpstest-card {
+  padding: 1rem 2rem 1rem 2rem;
+  height: 70px;
+}
+.cpstest-cards {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 0 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.cpstest-blocks {
+  background: #113b54;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0px;
+  border: none;
+  text-align: center;
+  min-height: 50px;
+}
+.cpstest-click-blocks {
+  background: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #113b54;
+  text-align: center;
+  height: 250px;
+  overflow: hidden !important;
+}
+.cpstest-reset-button {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.15s ease-in;
+  font-size: 25px;
+  text-align: center;
+  padding: 0px 7px 8px 4px;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: #009efd;
+  border-radius: 50%;
+}
+.cpstest-reset-button:hover {
+  background-color: #113b54;
+  transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-out;
+}
+.cpstest-click-me {
+  background: #113b54;
+  background: -webkit-linear-gradient(to right, #113b54, #009efd);
+  background: linear-gradient(to right, #113b54, #009efd);
+  text-align: center;
+  overflow: hidden !important;
+  line-height: 220px;
+  height: 250px;
+  color: white;
+  position: relative !important;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.cpstest-click-me:hover {
+  text-shadow: 0px 0px 8px rgb(255, 230, 186), 0px 0px 22px rgb(255, 255, 255),
+    0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+.clickMeTextShow {
+  opacity: 1;
+}
+.clickMeTextHide {
+  opacity: 0;
+}
+.ripple {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  animation: rippleEffect 0.88s 1;
+  opacity: 0;
+}
+@keyframes rippleEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+.modalclosebtn {
+  color: white;
+  cursor: pointer;
+}
+.modalclosebtn:hover {
+  color: red;
+  cursor: pointer;
+}
+.cpsmsgmodal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding: 100px 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.cpstest-main-msg {
+  background: #113b54;
+  background: -webkit-linear-gradient(to right, #113b54, #009efd);
+  background: linear-gradient(to right, #113b54, #009efd);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 10px 20px 10px 20px;
+  font: 17px/30px Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 750px;
+  min-width: 260px;
+  border: none;
+  border-radius: 10px;
+}
+.cpstest-main-msg-content {
+  background: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #009efd;
+  text-align: center;
+  overflow: hidden !important;
+}
+.cpstest-main-msg-image {
+  border-right: 2px solid #009efd;
+  margin: 10px;
+  min-height: 180px;
+  width: 180px;
+  float: left;
+}
+.social-share-button {
+  padding: 2px 2px 2px 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 15px 10px 15px 0px;
+  float: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  transition: border-color 0.3s ease-out;
+}
+.social-share-button:hover {
+  border-color: #009efd;
+  background-color: #009efd;
+  transition: background-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
+}
